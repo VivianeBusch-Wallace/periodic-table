@@ -1,0 +1,13 @@
+/* main periodic table setup  */
+td {
+  border: black solid 1px;
+  width: 10em;
+}
+/*colors of each element*/
+/* Disclaimer: I did not use ids in order to practice selector methods. The id is only there to help visually in html */
+
+/* picture of periodic table */
+img {
+  max-width: max-content;
+  max-height: 70vh;
+}

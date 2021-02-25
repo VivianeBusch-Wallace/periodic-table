@@ -2,29 +2,25 @@
 The id is only there to help visually in html */
 
 /* main periodic table setup  */
+table {
+  border-spacing: 0.7em;
+}
 td {
   width: 4em;
   height: 4em;
   text-align: center;
-}
-/*all elements*/
-tr:nth-child(1) :nth-child(1),
-tr:nth-child(1) :nth-last-child(1),
-tr:nth-child(n + 2):nth-child(-n + 3) :nth-child(n + 1):nth-child(-n + 2),
-tr:nth-child(n + 2):nth-child(-n + 3)
-  :nth-last-child(n + 1):nth-last-child(-n + 6),
-tr:nth-child(n + 4):nth-child(-n + 7) :nth-child(n + 1):nth-child(-n + 18),
-tr:nth-last-child(n + 1):nth-last-child(-n + 2)
-  :nth-child(n + 2):nth-child(-n + 15) {
   border: black solid 1px;
   border-radius: 0.5em;
 }
-/* tr:nth-child(4) :nth-child(n + 1):nth-child(-n + 18) {
-  border: red solid 3px;
-} */
-/* td:nth-child(1) {
-  border: solid hotpink 2px;
-} */
+
+td:empty {
+  border: none;
+}
+
+td:hover {
+  transform: scale(1.5);
+  opacity: 0.8;
+}
 
 /*colors of each element*/
 /* yellow elements:  H, C, N, O, P, S, Se */
@@ -111,3 +107,24 @@ img {
   max-width: max-content;
   max-height: 70vh;
 }
+
+/* Eliminated code but important for my notes: */
+/*to select all elements*/
+/* tr:nth-child(1) :nth-child(1),
+tr:nth-child(1) :nth-last-child(1),
+tr:nth-child(n + 2):nth-child(-n + 3) :nth-child(n + 1):nth-child(-n + 2),
+tr:nth-child(n + 2):nth-child(-n + 3)
+  :nth-last-child(n + 1):nth-last-child(-n + 6),
+tr:nth-child(n + 4):nth-child(-n + 7) :nth-child(n + 1):nth-child(-n + 18),
+tr:nth-last-child(n + 1):nth-last-child(-n + 2)
+  :nth-child(n + 2):nth-child(-n + 15) {
+  border: black solid 1px;
+  border-radius: 0.5em;
+} */
+/* playing with empty: */
+/* td:nth-child(18n) {
+  background-color: black !important;
+}
+td:empty {
+  background-color: transparent !important;
+} */
